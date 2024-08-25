@@ -1,0 +1,16 @@
+// {
+//     "extends": [
+//       "eslint:recommended",
+//       "plugin:react/recommended",
+//       "plugin:tailwindcss/recommended"
+//     ],
+//     "plugins": ["tailwindcss"],
+//     "rules": {
+//       "tailwindcss/classnames-order": "warn",
+//       "tailwindcss/enforces-shorthand": "warn",
+//       "tailwindcss/migration-from-tailwind-2": "warn",
+//       "tailwindcss/no-arbitrary-value": "warn",
+//       "tailwindcss/no-custom-classname": "off"
+//     }
+//   }
+  
