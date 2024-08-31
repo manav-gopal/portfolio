@@ -11,7 +11,7 @@ const About = () => {
       <LazyMotion features={domAnimation} strict>
         <m.div
           id="about"
-          className="relative flex items-center justify-center w-full h-screen min-h-[800px]"
+          className="relative flex items-center justify-center w-full min-h-[800px]"
         >
           <AboutText />
         </m.div>
