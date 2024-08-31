@@ -7,15 +7,22 @@ const ContactForm = () => {
   const [isSent, setIsSent] = useState(false);
   const form = useRef();
 
+  console.log(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      process.env.REACT_APP_EMAILJS_PUBLIC_ID,
+  );
+  
   const sendEmail = (e: { preventDefault: () => void }) => {
     e.preventDefault();
+
 
     emailjs
       .sendForm(
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
         process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         form.current,
-        { publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY }
+        { publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_ID }
       )
       .then(
         (response) => {
