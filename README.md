@@ -43,18 +43,18 @@ To run the project locally:
 
 3. Install dependencies:
    ```bash
-   npm install
+   yarn
    ```
 
 4. Start the development server:
    ```bash
-   npm start
+   yarn start
    ```
 
 ## Contact
 
 Feel free to reach out to me through:
-- [LinkedIn](https://www.linkedin.com/in/yourprofile)
+- [LinkedIn](https://www.linkedin.com/in/manav-gopal)
 - [X](https://x.com/ManavGopal2)
 
 ---
