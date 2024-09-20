@@ -1,7 +1,8 @@
 import React from "react";
-import CardSlider from "./CardSlider";
+import CardSlider from "../../../utils/CardSlider";
 import { CARD_DATA } from "../../../assets/Constants/constants";
 import { domAnimation, LazyMotion, m } from "framer-motion";
+import dragNdrop from "../../../assets/Drag-or-Click.png";
 
 const moveItem = <T,>(array: T[], fromIndex: number, toIndex: number): T[] => {
   const updatedArray = [...array];
@@ -74,6 +75,14 @@ const ProjectsData = () => {
             </ul>
           </div>
         </m.div>
+        <m.img
+          initial={{ x: 350, y: -50 }}
+          whileInView={{ x: 0, y: -50 }}
+          transition={{ duration: 1, type: "spring" }}
+          src={dragNdrop}
+          alt="Not Found"
+          className="hidden w-auto invert opacity-15 absolute right-0 md:translate-x-100 lg:block lg:h-24"
+        />
       </LazyMotion>
     </div>
   );
