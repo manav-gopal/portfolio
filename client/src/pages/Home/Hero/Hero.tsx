@@ -13,7 +13,7 @@ const Hero = () => {
       <LazyMotion features={domAnimation} strict>
         <m.div
           id="hero"
-          className="relative w-full flex justify-center items-center h-screen min-h-[800px] translate-y-[-10%]"
+          className="relative w-full flex justify-center items-center h-screen translate-y-[-10%]"
         >
           <HeroText />
           <ParticlesBG />

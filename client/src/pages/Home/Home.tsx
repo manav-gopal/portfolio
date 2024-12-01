@@ -4,6 +4,8 @@ import Hero from "./Hero/Hero";
 import About from "./About/About";
 import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
+import Skills from "./Skills/Skills";
+import Footer from "../../components/Footer";
 
 export const Home = () => {
   return (
@@ -11,7 +13,9 @@ export const Home = () => {
       <Hero /> 
       <About />
       <Projects />
+      <Skills />
       <Contact />
+      <Footer />
       {/* <GitHubRepos /> */}
     </div>
   );

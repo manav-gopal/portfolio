@@ -166,13 +166,14 @@ const skills = [
   },
 ];
 
+import { cardDataTypes } from "../../types";
 import robot_1 from "../bot_png/robot_1.png";
 import robot_2 from "../bot_png/robot_2.png";
 import robot_3 from "../bot_png/robot_3.png";
 import robot_4 from "../bot_png/robot_4.png";
 import robot_5 from "../bot_png/robot_5.png";
 
-const CARD_DATA = [
+const CARD_DATA : cardDataTypes[] = [
   {
     imgURL: robot_1,
     smallDesc: "A platform to search and find comprehensive movie details.",
@@ -183,7 +184,8 @@ const CARD_DATA = [
     ],
     title: "MoviesHQ",
     color: "#266678",
-    git_url: "https://github.com/manav-gopal/MoviesHQ"
+    git_url: "https://github.com/manav-gopal/MoviesHQ",
+    live_url: "https://moviehq-manav.vercel.app/"
   },
   {
     imgURL: robot_2,
@@ -207,7 +209,8 @@ const CARD_DATA = [
     ],
     title: "Auth Protected",
     color: "#36a18b",
-    git_url: "https://github.com/manav-gopal/auth-protected"
+    git_url: "https://github.com/manav-gopal/auth-protected",
+    live_url: "https://moviehq-manav.vercel.app/"
   },
   {
     imgURL: robot_4,

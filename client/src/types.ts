@@ -9,15 +9,17 @@ export interface GitHubRepo {
   language: string | null;
 }
 
+export interface cardDataTypes {
+  imgURL: string;
+  smallDesc: string;
+  Desc: string[];
+  title: string;
+  color: string;
+  git_url: string;
+  live_url?: string;
+}
 export interface CardSliderProps {
-  cardData: {
-    imgURL: string;
-    smallDesc: string;
-    Desc: string[];
-    title: string;
-    color: string;
-    git_url: string;
-  };
+  cardData: cardDataTypes;
   index: number;
   items: number;
   canDrag: boolean;

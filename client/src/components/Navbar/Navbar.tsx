@@ -8,20 +8,20 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 interface NavLinkProps {
   children: ReactNode;
 }
 
-const Links: string[] = ["About", "Projects", "Contact"];
+const Links: string[] = ["About", "Projects", "Skills", "Contact"];
 
 const NavLink: React.FC<NavLinkProps> = ({ children }) => (
   <a
     // as={Link}
 
     href={`#${(children as string).toLowerCase()}`}
-    className="px-2 py-1 rounded-2xl border border-none hover:border-solid hover:border-primary-100 hover:text-primary-100 transition-all duration-500"
+    className="px-2 py-1 transition-all duration-500 border border-none rounded-2xl hover:border-solid hover:border-primary-100 hover:text-primary-100"
     // sx={{ border: "1px solid transparent", paddingX: "1rem" }}
   >
     {children}
@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    // <Box id="nav" className="backdrop-blur-sm sticky top-0 z-50 px-4">
+    // <Box id="nav" className="sticky top-0 z-50 px-4 backdrop-blur-sm">
     <Box id="nav" className="sticky top-0 z-50 px-4">
       <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
         {/* Site name on the left */}

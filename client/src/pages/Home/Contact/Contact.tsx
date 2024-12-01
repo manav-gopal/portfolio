@@ -4,19 +4,13 @@ import { domAnimation, LazyMotion, m } from "framer-motion";
 import TextEffext from "../../../utils/TextEffect/TextEffext";
 import ContactForm from "../../../utils/ContactForm";
 import SocialLinks from "../../../components/SocialLinks";
+import SectionStyled from "../../../ui/Section/SectionStyled";
 
 const Contact = () => {
   const TextEffectContents = ["Let's Connect!", "Got Ideas?"];
   return (
-    <section
-      id={"contact"}
-      className="w-full overflow-hidden-web flex flex-col items-center"
-    >
-      <div className="w-full min-h-[800px] flex flex-col xl:w-[70%]">
-        <div className="w-full">
-          <SectionTitle title="CONTACT" subtitle="Get in touch" />
-        </div>
-        <div className="w-full flex justify-center items-center">
+    <SectionStyled id={'contact'} title={'CONTACT'} subtitle={'Get in touch'}>
+      <div className="flex items-center justify-center w-full">
           <LazyMotion features={domAnimation} strict>
             <m.div
               initial={{ x: 200 }}
@@ -33,17 +27,7 @@ const Contact = () => {
             </m.div>
           </LazyMotion>
         </div>
-        {/* <GlobeComponent /> */}
-      </div>
-      <div className="w-full flex flex-col">
-        <SocialLinks />
-        <div className="bg-grayscale-950 flex justify-center pb-4 text-grayscale-400">
-          <span>
-            Created by <em>Manav Gopal</em>
-          </span>
-        </div>
-      </div>
-    </section>
+    </SectionStyled>
   );
 };
 
